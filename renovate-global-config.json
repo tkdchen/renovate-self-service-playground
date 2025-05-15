@@ -1,6 +1,5 @@
 {
   "allowedPostUpgradeCommands": [
-    "^echo '{{{ toJSON upgrades }}}'$",
-    "^migration-tool.py '{{{ toJSON upgrades }}}'$"
+    "^echo '{{{ toJSON upgrades }}}'$"
   ]
 }

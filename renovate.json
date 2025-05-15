@@ -8,8 +8,7 @@
     "fileMatch": ["./*.yaml"],
     "postUpgradeTasks": {
       "commands": [
-        "echo '{{{ toJSON upgrades }}}'",
-        "migration-tool.py '{{{ toJSON upgrades }}}'"
+        "echo '{{{ toJSON upgrades }}}'"
       ],
       "executionMode": "branch"
     }
@@ -19,23 +18,6 @@
     {
       "matchPackageNames": ["registry.fedoraproject.org/fedora-minimal"],
       "enabled": false
-    },
-    {
-      "matchPackageNames": [
-        "quay.io/mytestworkload/test-renovate-updates-utils",
-        "quay.io/konflux-ci/tekton-catalog/task-summary"
-      ],
-      "groupName": "cool-updates"
-    },
-    {
-      "matchPackageNames": [
-        "quay.io/mytestworkload/test-renovate-updates-task-init",
-        "quay.io/mytestworkload/test-renovate-updates-task-clone",
-        "quay.io/mytestworkload/test-renovate-updates-task-lint",
-        "quay.io/mytestworkload/test-renovate-updates-task-coverage",
-        "quay.io/mytestworkload/test-renovate-updates-task-test"
-      ],
-      "groupName": "devel"
     },
     {
       "matchDatasources": ["pypi"],
