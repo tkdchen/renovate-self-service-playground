@@ -1,0 +1,31 @@
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+  name: build-pipeline
+spec:
+  tasks:
+  - name: init
+    taskRef:
+      params:
+      - name: name
+        value: init
+      - name: bundle
+        value: quay.io/konflux-ci/tekton-catalog/task-init:0.2@sha256:2f59e9a3c20ce4509356389d327087213cc82c079b30811935837791da140f9f
+      - name: kind
+        value: task
+      resolver: bundles
+  - name: clone
+    taskRef:
+      params:
+      - name: name
+        value: git-clone-oci-ta
+      - name: bundle
+        value: quay.io/konflux-ci/tekton-catalog/task-git-clone-oci-ta:0.1@sha256:3e171c1f3a9487a5764ebef629f93b3d2fc01cc8bad382dd8065cdfe42214148
+      - name: kind
+        value: task
+      resolver: bundles
+    workspaces:
+    - name: source
+      workspace: workspace
+  workspaces:
+  - name: workspace
