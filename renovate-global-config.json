@@ -1,5 +1,5 @@
 {
   "allowedPostUpgradeCommands": [
-    "^echo '{{{ toJSON upgrades }}}'$"
+    "^echo '{{{ upgrades }}}'$"
   ]
 }

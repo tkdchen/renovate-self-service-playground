@@ -8,7 +8,7 @@
     "fileMatch": ["./*.yaml"],
     "postUpgradeTasks": {
       "commands": [
-        "echo '{{{ toJSON upgrades }}}'"
+        "echo '{{{ upgrades }}}'"
       ],
       "executionMode": "branch"
     }
