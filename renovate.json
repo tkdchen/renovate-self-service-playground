@@ -24,8 +24,7 @@
         "apps/sbom-scripts/**",
         "apps/source-build/**",
         "apps/update-infra/**"
-      ],
-      "matchDatasources": ["pypi"]
+      ]
     }
   ]
 }
