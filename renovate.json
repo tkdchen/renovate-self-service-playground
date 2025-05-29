@@ -21,9 +21,9 @@
       "groupName": "python deps for tests",
       "description": "Group Python dependencies included for running tests",
       "matchFileNames": [
-        "sbom-scripts/**",
-        "source-build/**",
-        "update-infra/**"
+        "apps/sbom-scripts/**",
+        "apps/source-build/**",
+        "apps/update-infra/**"
       ],
       "matchDatasources": ["pypi"]
     }
