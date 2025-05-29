@@ -21,9 +21,11 @@
       "groupName": "python deps for tests",
       "description": "Group Python dependencies included for running tests",
       "matchFileNames": [
-        "**/requirements-dev.*",
-        "**/requirements-test?.*"
-      ]
+        "sbom-scripts/**",
+        "source-build/**",
+        "update-infra/**"
+      ],
+      "matchDatasources": ["pypi"]
     }
   ]
 }
