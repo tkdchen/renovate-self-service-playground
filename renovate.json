@@ -5,7 +5,7 @@
   ],
 
   "tekton": {
-    "disabled": true,
+    "enabled": false,
     "fileMatch": ["./*.yaml"],
     "postUpgradeTasks": {
       "commands": [
