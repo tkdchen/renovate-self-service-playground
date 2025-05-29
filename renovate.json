@@ -17,18 +17,15 @@
 
   "packageRules": [
     {
-      "matchPackageNames": ["registry.fedoraproject.org/fedora-minimal"],
-      "enabled": false
-    },
-    {
-      "matchDatasources": ["pypi"],
-      "groupName": "python-deps"
-    },
-    {
-      "groupName": "redhat-images",
-      "matchPackageNames": [
-        "registry.access.redhat.com/ubi9/python-312"
-      ]
+      "groupName": "python deps for tests",
+      "description": "Group Python dependencies included for running tests",
+      "matchFileNames": [
+        "**/requirements-dev.in",
+        "**/requirements-dev.txt",
+        "**/requirements-tests?.in",
+        "**/requirements-tests?.txt"
+      ],
+      "matchDatasources": ["pypi"]
     }
   ]
 }
