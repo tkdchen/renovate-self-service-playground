@@ -42,7 +42,7 @@ spec:
       workspace: workspace
     runAfter:
     - clone
-  - name: source-build
+  - name: build-source-image
     taskRef:
       params:
       - name: name
