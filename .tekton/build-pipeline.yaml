@@ -27,5 +27,20 @@ spec:
     workspaces:
     - name: source
       workspace: workspace
+  - name: source-build
+    taskRef:
+      params:
+      - name: name
+        value: source-build
+      - name: bundle
+        value: quay.io/konflux-ci/tekton-catalog/task-source-build:0.1@sha256:123abc456def789ghi012jkl345mno678pqr901stu234vwx567yza890bcd123efg456hij789
+      - name: kind
+        value: task
+      resolver: bundles
+    workspaces:
+    - name: source
+      workspace: workspace
+    runAfter:
+    - clone
   workspaces:
   - name: workspace
