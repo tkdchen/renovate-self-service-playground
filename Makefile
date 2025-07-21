@@ -9,4 +9,15 @@ run/renovate:
 		renovate \
 		--token "$(GH_TOKEN)" "$(GIT_REPO)" \
 		2>&1 >"$(BUILD_LOG_FILE)"
+	gh pr list --repo $(GIT_REPO)
 
+RENOVATE_VERSION ?= latest
+
+.PHONY: install
+install:
+	npm install renovate@$(RENOVATE_VERSION)
+
+.PHONY: clean
+clean:
+	rm -rf node_modules/
+	rm build.log
