@@ -27,6 +27,21 @@ spec:
     workspaces:
     - name: source
       workspace: workspace
+  - name: build-container
+    taskRef:
+      params:
+      - name: name
+        value: buildah
+      - name: bundle
+        value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.4@sha256:90192492079667e2f88c5a41760c6a16f168bfcd5d32c8e053268789960fcf5f
+      - name: kind
+        value: task
+      resolver: bundles
+    workspaces:
+    - name: source
+      workspace: workspace
+    runAfter:
+    - clone
   - name: source-build
     taskRef:
       params:
@@ -41,6 +56,6 @@ spec:
     - name: source
       workspace: workspace
     runAfter:
-    - clone
+    - build-container
   workspaces:
   - name: workspace
