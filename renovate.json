@@ -16,6 +16,18 @@
     }
   },
 
+  "pip_requirements": {
+    "enabled": false
+  },
+  "pip_setup": {
+    "enabled": false
+  },
+  "pip-compile": {
+    "managerFilePatterns": [
+      "requirement.txt"
+    ]
+  },
+
   "packageRules": [
     {
       "groupName": "python deps for tests",
