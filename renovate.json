@@ -30,6 +30,11 @@
 
   "packageRules": [
     {
+      "matchDatasources": ["pypi"],
+      "groupName": "Python package updates"
+    },
+
+    {
       "groupName": "python deps for tests",
       "description": "Group Python dependencies included for running tests",
       "matchFileNames": [
