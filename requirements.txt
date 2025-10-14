@@ -155,11 +155,11 @@ requests==2.29.0 \
     --hash=sha256:e8f3c9be120d3333921d213eef078af392fba3933ab7ed2d1cba3b56f2568c3b \
     --hash=sha256:f2e34a75f4749019bb0e3effb66683630e4ffeaf75819fb51bebef1bf5aef059
     # via -r requirements.in
-ruamel-yaml==0.17.34 \
+ruamel.yaml==0.17.34 \
     --hash=sha256:6ffd0a1906ddeac4a46b7b53d288a5a26bfab8f1986ddab3d8e406beda7e6e72 \
     --hash=sha256:cde36dc1683b4f60f18c27ca94fc60c03e47003bac7910a78e00a639a4f282bd
     # via -r requirements.in
-ruamel-yaml-clib==0.2.14 \
+ruamel.yaml.clib==0.2.14 \
     --hash=sha256:090782b5fb9d98df96509eecdbcaffd037d47389a89492320280d52f91330d78 \
     --hash=sha256:0a54e5e40a7a691a426c2703b09b0d61a14294d25cfacc00631aa6f9c964df0d \
     --hash=sha256:10d9595b6a19778f3269399eff6bab642608e5966183abc2adbe558a42d4efc9 \
