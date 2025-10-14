@@ -24,7 +24,7 @@
   },
   "pip-compile": {
     "managerFilePatterns": [
-      "requirement.txt"
+      "requirements.txt"
     ]
   },
 
