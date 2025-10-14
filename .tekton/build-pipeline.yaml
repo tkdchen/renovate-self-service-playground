@@ -10,7 +10,7 @@ spec:
       - name: name
         value: init
       - name: bundle
-        value: quay.io/konflux-ci/tekton-catalog/task-init:0.2@sha256:2f59e9a3c20ce4509356389d327087213cc82c079b30811935837791da140f9f
+        value: quay.io/konflux-ci/tekton-catalog/task-init:0.2@sha256:bbf313b09740fb39b3343bc69ee94b2a2c21d16a9304f9b7c111c305558fc346
       - name: kind
         value: task
       resolver: bundles
@@ -42,6 +42,9 @@ spec:
       workspace: workspace
     runAfter:
     - clone
+    params:
+    - name: BUILDAH_FORMAT
+      value: $(params.buildah-format)
   - name: build-source-image
     taskRef:
       params:
@@ -59,3 +62,8 @@ spec:
     - build-container
   workspaces:
   - name: workspace
+  params:
+  - name: buildah-format
+    default: docker
+    type: string
+    description: The format for the resulting image's mediaType. Valid values are oci or docker.
