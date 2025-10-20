@@ -131,9 +131,9 @@ idna==3.11 \
     --hash=sha256:771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea \
     --hash=sha256:795dafcc9c04ed0c1fb032c2aa73654d8e8c5023a7df64a53f39190ada629902
     # via requests
-iniconfig==2.1.0 \
-    --hash=sha256:3abbd2e30b36733fee78f9c7f7308f2d0050e88f0087fd25c2645f63c773e1c7 \
-    --hash=sha256:9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760
+iniconfig==2.3.0 \
+    --hash=sha256:c76315c77db068650d49c5b56314774a7804df16fee4402c1f19d6d15d8c4730 \
+    --hash=sha256:f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12
     # via pytest
 packaging==25.0 \
     --hash=sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484 \
@@ -155,11 +155,11 @@ requests==2.29.0 \
     --hash=sha256:e8f3c9be120d3333921d213eef078af392fba3933ab7ed2d1cba3b56f2568c3b \
     --hash=sha256:f2e34a75f4749019bb0e3effb66683630e4ffeaf75819fb51bebef1bf5aef059
     # via -r requirements.in
-ruamel.yaml==0.17.34 \
+ruamel-yaml==0.17.34 \
     --hash=sha256:6ffd0a1906ddeac4a46b7b53d288a5a26bfab8f1986ddab3d8e406beda7e6e72 \
     --hash=sha256:cde36dc1683b4f60f18c27ca94fc60c03e47003bac7910a78e00a639a4f282bd
     # via -r requirements.in
-ruamel.yaml.clib==0.2.14 \
+ruamel-yaml-clib==0.2.14 \
     --hash=sha256:090782b5fb9d98df96509eecdbcaffd037d47389a89492320280d52f91330d78 \
     --hash=sha256:0a54e5e40a7a691a426c2703b09b0d61a14294d25cfacc00631aa6f9c964df0d \
     --hash=sha256:10d9595b6a19778f3269399eff6bab642608e5966183abc2adbe558a42d4efc9 \
