@@ -4,6 +4,13 @@ metadata:
   name: build-pipeline
 spec:
   tasks:
+  - name: origin
+    taskSpec:
+      steps:
+      - name: start
+        image: quay.io/konflux-ci/tools@sha256:a42cfa49ba1adff89d940538b89adbcc765e83f1adffe841775ecf27f657058b
+        script: |
+          echo start origin
   - name: init
     taskRef:
       params:
