@@ -23,6 +23,7 @@
     "enabled": false
   },
   "pip-compile": {
+    "enabled": false,
     "managerFilePatterns": [
       "requirements.txt"
     ]
