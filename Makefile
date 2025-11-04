@@ -7,6 +7,7 @@ run/renovate:
 	@LOG_LEVEL=debug \
 		RENOVATE_CONFIG_FILE="$(shell pwd)/renovate-global-config.json" \
 		renovate \
+		--pr-hourly-limit 0 \
 		--token "$(GH_TOKEN)" "$(GIT_REPO)" \
 		2>&1 | tee "$(BUILD_LOG_FILE)"
 	gh pr list --repo $(GIT_REPO)
