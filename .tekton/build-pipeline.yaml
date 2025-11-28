@@ -8,7 +8,7 @@ spec:
     taskSpec:
       steps:
       - name: start
-        image: quay.io/konflux-ci/tools@sha256:a42cfa49ba1adff89d940538b89adbcc765e83f1adffe841775ecf27f657058b
+        image: quay.io/konflux-ci/tools@sha256:7c2b6eef43e7cda729c9c6546b6df07b5f42371d39e32287a988be1e08d58b9e
         script: |
           echo start origin
   - name: init
