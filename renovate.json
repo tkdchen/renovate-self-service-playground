@@ -9,6 +9,7 @@
     "fileMatch": ["./*.yaml"],
     "postUpgradeTasks": {
       "commands": [
+        "cat \"$RENOVATE_POST_UPGRADE_COMMAND_DATA_FILE\"",
         "pmt migrate -f \"$RENOVATE_POST_UPGRADE_COMMAND_DATA_FILE\""
       ],
       "executionMode": "branch",
